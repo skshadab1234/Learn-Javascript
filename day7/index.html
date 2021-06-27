@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day 7 - Events</title>
+    </head>
+    <body>
+        <!-- <input type="text" onfocus="FocusME()" onblur="BlurMe()" id="text"> -->
+        <script>
+            // Events 
+
+                // 1. Click (onclick)
+                    // function clickme(){
+                    //     alert("Button has been clicked");
+                    // }
+
+                // 2. Double Click (ondblclick)
+                    // function doublecliick(){
+                    //     alert("Double Click Event Triggerd");
+                    // }
+
+
+                // 3. Right Click (oncontextmenu)
+                    // function rightclick(){
+                       // alert("Right Click has been pressed");
+                    // }
+
+                // 4. Mouse Hover (onmouseenter)
+                    //    function MouseHover(){
+                    //        alert("Mouse Hoverd On Button")
+                    //    } 
+
+                // 5. Mouse Out (onmouseout)
+                        // function MouseOut(){
+                        //     document.write('MOUSE HAS BEEN MOVED')
+                        // }
+
+                // 6. Mouse Down (onmousedown)
+                        // function  MouseDown(){
+                        //     document.write("Mouse HAS BEEN DOWN")
+                        // }
+
+                // 7. Mouse Up (onmouseup)
+                    // function MouseUp(){
+                    //     document.write("Mouse Up")
+                    // }
+
+                // 8. Key Press (onkeypress)
+                        // function keypres(){
+                        //     document.getElementById("text").style.backgroundColor = "yellow";
+                        //     document.getElementById("text").style.color = "white";
+                        // }
+
+                // 9. Key Up (onkeyup)
+                    //    function keyup(){
+                    //        alert("KEY UP")
+                    //    }    
+                       
+                // 9.1 Key DOWN (onkeydown)     
+                    //    function keydown(){
+                    //        alert("Key Down Trigged")
+                    //    }
+
+                
+                // 11. Resize (onresize)
+                        // function resize(){
+                        //     alert("Screen has Resized")
+                        // }
+
+                // 12. Scroll (onscroll)
+                        // function scroll(){
+                        //     document.body.style.backgroundColor = 'red';
+                        // }
+
+                // 13. Focus (onfocus)
+                    //    function FocusME() {
+                    //        document.getElementById("text").style.backgroundColor ='red';
+                    //    }  
+
+                // 14. Blur (onblur)
+                    //    function BlurMe(){
+                    //         document.getElementById("text").style.backgroundColor ='yellow';
+                    //    }
+
+
+
+
+        //    Objects             
+
+         var a = {
+                 fname : 'Khan',
+                 lname : 'Shadab',
+                 age : 21,
+                 email : "ks615044@gmail.com",
+                 salary : function(){
+                     return 2500;
+                 },
+                 fullname : function(){
+                    return this.fname+' '+this.lname;
+                 }
+
+                }                        
+
+         console.log(a);
+         document.write(a.fullname())
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+        </script>   
+    </body>
+</html>
