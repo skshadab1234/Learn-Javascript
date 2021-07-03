@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9 - Math Methods & Date Methods</title>
+</head>
+<body>
+
+    <script>
+        // Math Method
+        // This all Methods are used in Game Development or to make animation website 
+          
+            // 1. ceil(x)
+                // Ceil Function Work only if number is in decimal form
+                // It Returns Upper Value of Passed Numeric Argument
+                // document.write(Math.ceil(2.1))
+                
+            // 2. floor(x)
+                // Floor Function Work only if number is in decimal form
+                // It Returns Downward Value of Passed Numeric Argument
+                // document.write(Math.floor(12.5))
+            
+            // 3. round(x)
+                // It returns the nearest integer value 
+                // like if we have a number greater than or equal to .5 then it will print 1 otherwie it will print 0
+                // document.write(Math.round(10.2))
+
+
+            // 4. trunc(x)
+                // It removes all the number after Decimal
+                // document.write(Math.trunc(15.254568))
+
+            // 5. max(x,y,z,....,n)
+                // Returns the Largest Number of Numeric Expression
+                // var a = Math.max(10,25,58,56,121,224,221,54,21);
+                // var a = Math.max(-5,-2);
+                // document.write(a)
+
+            // 6. min(x,y,z,....,n)
+                // Returns the Lowest Number of Numeric Expression
+                // var a = Math.min(-10, -2);
+                // document.write(a)
+
+            // 7. sqrt(x)
+                // document.write(Math.sqrt(4))
+
+            // 8. cbrt(x)
+                // document.write(Math.cbrt(125))
+
+            // 9. pow(x,y)
+                // Math.pow(base, exponential)
+                // var a = Math.pow(2,5) // 2 x 2 x 2 x 2 x 2 
+                // document.write(a)
+
+            // 10. random()
+                // var a = Math.round((Math.random() * 10) + 1) ;
+                // document.write(a)
+                 
+            // 11. abs(x)
+                // document.write(Math.abs(2 - 5))
+
+            // 12. PI
+               
+    // Date Method
+     var now = new Date()
+
+    //  document.write(now)
+
+    // 1. toDateString()
+        // document.write(now.toDateString())
+    // 2. getDate()
+            // document.write(now.getDate())
+
+    // 3. getFullYear()
+        // document.write(now.getFullYear())
+
+    // 4. getMonth()
+        // document.write(now.getMonth() + 1)
+
+    // 5. getDay()
+        // document.write(now.getDay() + 1)
+
+    // 6. getHours()
+        // document.write(now.getHours())
+
+    // 7. getMinutes()
+        // document.write(now.getMinutes())
+
+    // 8. getSeconds()
+        // document.write(now.getSeconds())
+
+    // 9. getMilliseconds()
+        // document.write(now.getMilliseconds())
+
+    // 10. setDate()
+        // now.setDate(4)
+        // document.write(now)
+
+    // 11. setFullYear()
+        // now.setFullYear(2023)
+        // document.write(now)
+
+    // 12. setMonth()
+        // now.setMonth(2)
+        // document.write(now)
+
+    // 13. setHours()
+        // now.setHours(2)
+        // document.write(now)
+
+    // 14. setMinutes()
+        // now.setMinutes(1)
+        // document.write(now)
+
+    // 15. setSeconds() 
+        // now.setSeconds(25)
+        // document.write(now)
+
+    // 16. setMilliseconds()
+        // var milll = now.setMilliseconds(25)
+        // document.write(milll)
+
+    document.write(`${now.getDate()} - ${now.getMonth() + 1} - ${now.getFullYear()}  ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`)
+
+    </script>
+</body>
+</html>
