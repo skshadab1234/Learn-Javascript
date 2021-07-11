@@ -1,0 +1,157 @@
+    <!DOCTYPE html>
+    <html lang="en" id="html">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day 12</title>
+        <style>
+            #outer {
+                width: 100%;
+                background-color:pink;
+                padding: 10px;
+            }
+        
+            #inner{
+                background-color: red;
+                padding: 20px;
+                display: inline-flex;
+            }
+        
+            #inner h2{
+                width: 100vw;
+            }
+            #inner div{
+                width: 200px;
+                background-color: #ddd;
+                margin: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 200px;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+
+        <!-- <div id="outer">
+            <h2>Outer</h2>
+            <div id="inner">
+                <div>A</div>
+                <div>B</div><div id="child-C">C</div><div>D</div>
+                <div>E</div>
+            </div>
+        </div>
+         -->
+        <!-- <button id="click_here">
+            Click me
+        </button>
+
+        <button id="stop">
+            Stop
+        </button> -->
+
+
+        <script>
+        // document.getElementById("click").ondblclick = abc;
+
+        // // function abc(){
+        // //     alert("Button Clicked")
+        // // }
+
+        // addEventListener & removeEventListener
+        
+        var btn = document;
+            btn.addEventListener('mousemove', abc)
+
+            function abc(a){
+                
+                console.log(a);
+                var width = document.getElementById("width");
+                width.innerHTML = a.pageX;
+                var height = document.getElementById("height");
+                height.innerHTML = a.pageY;
+
+                width.style.left =a.pageX+"px";
+                width.style.top =a.pageY+"px";
+
+                height.style.left =a.pageX+"px";
+                height.style.top =a.pageY+"px";
+            }
+
+            document.getElementById("stop_event").addEventListener('click', () => {
+                btn.removeEventListener('mousemove', abc);
+            })
+            setInterval(abc, 1000)
+
+        // var btn = document.getElementById('click_here');
+        //     btn.addEventListener('click', abc)
+
+        // var stop = document.getElementById('stop');
+
+        // function abc(){
+        //     alert("Hello World")
+        // }
+
+        // stop.addEventListener('click', function(){
+        //     btn.removeEventListener('click', abc)
+        // })
+
+            
+            // Traversal Element
+            // 1. parentNode
+                // var a = document.getElementById('html').parentNode;
+                // console.log(a);
+
+            // 2. ParentElement
+                // var a = document.getElementById('html').parentElement;
+                // console.log(a);
+
+            // 3. Children
+                // var a = document.getElementById('inner').children[0].innerHTML;
+                // console.log(a);
+
+            // 4. childNodes
+                // var a = document.getElementById('inner').childNodes;
+                // console.log(a);
+
+            // 5. firstChild
+                // var a = document.getElementById('inner').firstChild;
+                // console.log(a);
+
+            // 6. firstElementChild
+                // var a = document.getElementById('inner').firstElementChild.innerHTML;
+                // console.log(a);
+
+            // 7. lastChild
+                // var a = document.getElementById('inner').lastChild;
+                // console.log(a);
+
+            // 8. lastElementChild
+                // var a = document.getElementById('outer').lastElementChild.style.background = 'green';
+                // console.log(a);s
+
+            // 9. nextElementSibling
+                // var a = document.getElementById("child-C");
+                // var b = a.nextElementSibling;
+                // console.log(b)
+
+            // 10. nextSibling
+                // var a = document.getElementById("child-C");
+                // var b = a.nextSibling;
+                // console.log(b)
+                
+
+            // 11. previousElementSibling
+                // s
+            // 12. previousSibling
+
+            var a = document.getElementById("child-C");
+                var b = a.previousSibling;
+                console.log(b)
+        </script>
+        
+    </body>
+    </html>
