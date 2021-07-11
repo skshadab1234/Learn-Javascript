@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - create Method & appendChild & insertBefore</title>
+</head>
+<body>
+
+
+    <div id="test">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam cupiditate accusamus ex natus possimus rerum beatae, illum recusandae harum qui est exercitationem voluptas quae omnis tenetur at tempore veniam eos. Dolorum praesentium ipsam ad eveniet, vel, iure id tempore, natus aliquid hic ipsa perspiciatis? Maxime quos aperiam tempore mollitia, exercitationem numquam. Quod at asperiores sequi accusamus doloribus molestiae quas voluptates itaque quo dignissimos! Repellendus atque, maiores cumque neque odit repudiandae saepe id ipsa reiciendis in obcaecati inventore blanditiis est? Est dolores similique reiciendis, aperiam velit voluptatum incidunt alias molestias repudiandae minima eius aut, iste libero accusantium harum sed nisi quia obcaecati magni, rem quos aspernatur possimus earum sit. Odio voluptatibus nihil reiciendis, dolorum sed similique numquam, officiis architecto dicta ea asperiores enim necessitatibus doloremque hic laborum quae, rerum praesentium repellat iure provident. Accusantium repellat deleniti et maxime quos dolorum blanditiis corrupti impedit minus! Adipisci fuga nobis obcaecati quia expedita assumenda a at minima, repudiandae quas voluptate aperiam maxime, quae, voluptatum deleniti quaerat tempora tenetur? Ipsum quis debitis eos necessitatibus repellendus, blanditiis veritatis vel reiciendis soluta numquam incidunt laboriosam expedita aperiam illum? Sunt impedit quos delectus sint possimus aliquam, officiis iste, quod voluptatibus optio unde non quia molestias iure minus aspernatur.</p>
+        <h5>Shadab</h5>
+    </div>
+
+    <script>
+        // createElement Method
+            var newElement = document.createElement('h2');
+            console.log(newElement)
+
+        // createTextNode Method
+            var newText = document.createTextNode('This is a Simple Text')
+            console.log(newText)
+
+        // createComment Method 
+            var newComment= document.createComment("This is just Comment");
+            console.log(newComment)
+
+        // appendChild Method 
+            newElement.appendChild(newText);
+            var target = document.getElementById("test");
+            target.appendChild(newElement)
+
+        // insertBefore Method 
+            console.log(target.childNodes)
+            target.insertBefore(newElement, target.childNodes[3])
+
+    </script>
+</body>
+</html>
